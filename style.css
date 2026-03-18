@@ -1,0 +1,13 @@
+.font {
+  font-family: "Almendra Display", serif;
+  font-weight: 400;
+  font-width: 100%;
+  font-style: normal;
+  font-size: 5rem;
+  font-color: rgb(75, 0, 130);
+}
+
+.bg {
+    background-color: rgb(216, 189, 239);
+}
+

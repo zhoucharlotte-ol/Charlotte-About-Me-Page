@@ -1,21 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlotte's About Me Page</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me Page</title>
     <!--css stylesheet-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/> <!--what does this do?-->
-    <!--include a new font--> 
-    <!--open graph meta tags-->
-    <meta property="og:title" content="Charlotte's About Me Page">
-    <meta property="og:description" content=""> <!--include!!-->
-    <meta property="og:image" content=""> <!--include!!-->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content=""> <!--include!!-->
-</head>
-<body>
-    <h1>Charlotte Zhou</h1>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"/>
+   <!--include a new font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet"> 
+   <!--open graph meta tags-->
+   <meta property="og:title" content="Charlotte's About Me Page">
+   <meta property="og:description" content="Learn more about Charlotte Zhou">
+   <meta property="og:image" content=""> <!--include!!-->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content=""> <!--include!!-->
+  </head>
 
-</body>
+  <body class="bg">
+
+    <!--NavBar-->
+<nav class="navbar navbar-expand-lg bg-dark-subtle">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!--Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto p-5 " style="width: 600px;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="IoT.jpg" class="d-block w-100" alt="Charlotte tinkering with a breadboard and Arduino.">
+    </div>
+    <div class="carousel-item">
+      <img src="bnb.jpg" class="d-block w-100" alt="Charlotte holding a microchip and motherboard.">
+    </div>
+    <div class="carousel-item">
+      <img src="wells fargo.jpg" class="d-block w-100" alt="Charlotte at the Wells Fargo Financial Workshop.">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <!--Main Container-->
+    <div class="container">
+        <!--most content within this div-->
+        <h1 class="text-center p-5 mb-5 mt-5 font text-#6f42c1">Charlotte Zhou</h1>
+        <h2 id="about" class="fs-1 text-center p-5 mb-5 mt-5">About Me</h2>
+        <div class="w-50 container text-center bg-dark-subtle p-5 mb-5 mt-5 fnt">
+            <p>Hello! I am Charlotte Zhou. I am a Psychology graduate from San Francisco State University, and am trying to break into the technology industry. I am currently a part of the Registered Pre-Apprenticeship Program with Dev/Mission. The program is filled with classes learning about IoT, IT essentials, and programming. I have always had an interest in technology, and am glad to finally be pursuing that interest. For the past couple years, I have been a caregiver for my grandma, which has been a great experience, but I want to build a career for myself, so I have high hopes for what will come out of completing this program.</p>
+            <p>I do still enjoy the field of Psychology, but because I want to enter Technology, I want to find a happy medium between the two, which is where my interest in the field of IT (Information Technology) comes from, because it would be exactly that. I will continue to hone my skills in IT, and keep working towards a future in that field.</p> 
+</p>
+        </div>
+        <div class="w-100 text-center bg-dark-subtle p-5 mb-5 mt-5">
+        <h2 id="projects" class="fs-1 text-center p-5 mb-5 mt-5">Projects</h2>
+
+        <div class="row">
+            <div class="col">
+                <!--Card 1: Poem Page-->
+                <div class="card">
+                    <img src="poempage.png" class="card-img-top" alt="Poem Page about Maya Angelou's Still I Rise">
+                        <div class="card-body">
+                        <h5 class="card-title">Poem Page</h5>
+                            <p class="card-text">A poem by Maya Angelou that empowers readers to rise above hate and prejudice.</p>
+                                <a href="https://zhoucharlotte-ol.github.io/poem-page/" target="_blank" class="btn btn-primary">View</a>
+                        </div>
+                </div>
+            </div>
+                <!--Card 2: Web App-->
+                <div class="col">
+                <div class="card">
+                    <img src="WIP.jpg" class="card-img-top" alt="Work In Progress">
+                        <div class="card-body">
+                        <h5 class="card-title">Web App</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                </div>
+            </div>
+                <div class="col">
+                <!--Card 3: IoT Final Project-->
+                <div class="card">
+                    <img src="WIP.jpg" class="card-img-top" alt="Work In Progress">
+                        <div class="card-body">
+                        <h5 class="card-title">IoT Final Project</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Skills-->
+        <h2 id="skills" class="fs-1 text-center p-5 mb-5 mt-5">Skills</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="bg-secondary text-white p-5 mt-5 mb-5">
+                    <h3>Hard Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>Visual Studio Code</li>
+                        <li>GitHub and GitHub Workspace</li>
+                        <li>Google Workspace</li>
+                        <li>CPR/First Aid</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="bg-secondary text-white p-5 mt-5 mb-5">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Open-minded</li>
+                        <li>Dependable</li>
+                        <li>Quick Learner</li>
+                        <li>Good Communication</li>
+                        <li>Collaborator</li>
+                    </ul>
+                </div>
+        </div>
+
+        <!--Contact-->
+        <div>
+        <h2 id="contact" class="fs-1 text-center p-5 mb-5 mt-5">Contact</h2>
+
+        <div class="container text-center">
+            <a href="mailto: zhoucharlotte11@gmail.com" target="_blank" class="btn btn-primary">Email</a>
+            <a href="www.linkedin.com/in/charlotte-z-a3512a39a/" target="_blank" class="btn btn-primary">LinkedIn</a>
+            <a href="https://github.com/zhoucharlotte-ol" target="_blank" class="btn btn-primary">GitHub</a>
+        </div>
+
+
+    <!--End of Container-->
+
+    <footer class="text-center p-5 mt-5">
+        <p>&copy; 2026 Charlotte Zhou.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>
