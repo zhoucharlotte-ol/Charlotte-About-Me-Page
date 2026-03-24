@@ -11,18 +11,20 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet"> 
+   <!-- bootstrap CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
    <!--open graph meta tags-->
    <meta property="og:title" content="Charlotte's About Me Page">
    <meta property="og:description" content="Learn more about Charlotte Zhou">
-   <meta property="og:image" content=""> <!--include!!-->
+   <meta property="og:image" content="wells fargo.jpg">
    <meta property="og:type" content="website">
-   <meta property="og:url" content=""> <!--include!!-->
+   <meta property="og:url" content="https://zhoucharlotte-ol.github.io/Charlotte-About-Me-Page/">
   </head>
 
   <body class="bg">
 
     <!--NavBar-->
-<nav class="navbar navbar-expand-lg bg-dark-subtle">
+<nav class="header fs-6 navbar navbar-expand-lg bg-dark-subtle">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +33,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About Me</a>
+          <a class="nav-link" href="#about">About Me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#projects">Projects</a>
@@ -48,7 +50,7 @@
 </nav>
 
     <!--Carousel-->
-    <div id="carouselExampleIndicators" class="carousel slide mx-auto p-5 " style="width: 600px;">
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto p-5" style="width: 600px;">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -56,13 +58,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="IoT.jpg" class="d-block w-100" alt="Charlotte tinkering with a breadboard and Arduino.">
+      <img src="IoT.jpg" class="d-block w-100 img-fluid" alt="Charlotte tinkering with a breadboard and Arduino.">
     </div>
     <div class="carousel-item">
-      <img src="bnb.jpg" class="d-block w-100" alt="Charlotte holding a microchip and motherboard.">
+      <img src="bnb.jpg" class="d-block w-100 img-fluid" alt="Charlotte holding a microchip and motherboard.">
     </div>
     <div class="carousel-item">
-      <img src="wells fargo.jpg" class="d-block w-100" alt="Charlotte at the Wells Fargo Financial Workshop.">
+      <img src="wells fargo.jpg" class="d-block w-100 img-fluid" alt="Charlotte at the Wells Fargo Financial Workshop.">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -75,18 +77,19 @@
   </button>
 </div>
 
-    <!--Main Container-->
-    <div class="container">
+      <!--Main Container-->
+      <div class="container">
         <!--most content within this div-->
         <h1 class="text-center p-5 mb-5 mt-5 font text-#6f42c1">Charlotte Zhou</h1>
-        <h2 id="about" class="fs-1 text-center p-5 mt-5">About Me</h2>
+        <h2 id="about" class="header fs-1 text-center pt-5 mt-5">About Me</h2>
         <div class="w-50 container text-center bg-dark-subtle p-5 mb-5 mt-5 fnt">
             <p>Hello! I am Charlotte Zhou. I am a Psychology graduate from San Francisco State University, and am trying to break into the technology industry. I am currently a part of the Registered Pre-Apprenticeship Program with Dev/Mission. The program is filled with classes learning about IoT, IT essentials, and programming. I have always had an interest in technology, and am glad to finally be pursuing that interest. For the past couple years, I have been a caregiver for my grandma, which has been a great experience, but I want to build a career for myself, so I have high hopes for what will come out of completing this program.</p>
             <p>I do still enjoy the field of Psychology, but because I want to enter Technology, I want to find a happy medium between the two, which is where my interest in the field of IT (Information Technology) comes from, because it would be exactly that. I will continue to hone my skills in IT, and keep working towards a future in that field.</p> 
 </p>
         </div>
-        <div class="w-100 text-center bg-dark-subtle p-5 mb-5 mt-5">
-        <h2 id="projects" class="fs-1 text-center p-5 mt-5">Projects</h2>
+
+        <div class="w-100 container text-center bg-dark-subtle p-5 mb-5 mt-5">
+        <h2 id="projects" class="header fs-1 text-center p-5 mb-4">Projects</h2>
 
         <div class="row">
             <div class="col">
@@ -124,13 +127,17 @@
             </div>
         </div>
 
+</div>
+
         <!--Skills-->
-        <h2 id="skills" class="fs-1 text-center p-5 mt-5">Skills</h2>
+        <div class="w-100 container text-center bg-dark-subtle p-5 mb-5 mt-5">
+        <div class="skills">
+        <h2 id="skills" class="header fs-1 text-center p-5">Skills</h2>
         <div class="row">
             <div class="col-6">
                 <div class="bg-secondary text-white p-5 mt-5 mb-5">
-                    <h3>Hard Skills</h3>
-                    <ul>
+                    <h3 class="header fs-3">Hard Skills</h3>
+                    <ul class="d-inline-block text-start">
                         <li>HTML</li>
                         <li>Visual Studio Code</li>
                         <li>GitHub and GitHub Workspace</li>
@@ -141,8 +148,8 @@
             </div>
             <div class="col-6">
                 <div class="bg-secondary text-white p-5 mt-5 mb-5">
-                    <h3>Soft Skills</h3>
-                    <ul>
+                    <h3 class="header fs-3">Soft Skills</h3>
+                    <ul class="d-inline-block text-start">
                         <li>Open-minded</li>
                         <li>Dependable</li>
                         <li>Quick Learner</li>
@@ -151,21 +158,24 @@
                     </ul>
                 </div>
         </div>
+        </div>
+        </div>
+        </div>
 
         <!--Contact-->
         <div>
-        <h2 id="contact" class="fs-1 text-center p-5 mt-5">Contact</h2>
+        <h2 id="contact" class="header fs-1 text-center p-5 mt-5">Contact</h2>
 
         <div class="container text-center">
             <a href="mailto: zhoucharlotte11@gmail.com" target="_blank" class="btn btn-primary">Email</a>
-            <a href="www.linkedin.com/in/charlotte-z-a3512a39a/" target="_blank" class="btn btn-primary">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/zhou-charlotte/" target="_blank" class="btn btn-primary">LinkedIn</a>
             <a href="https://github.com/zhoucharlotte-ol" target="_blank" class="btn btn-primary">GitHub</a>
-        </div>
+        
 
 
     <!--End of Container-->
 
-    <footer class="text-center p-5 mt-5">
+    <footer class="header fs-5 text-center p-5 mt-5">
         <p>&copy; 2026 Charlotte Zhou.</p>
     </footer>
 

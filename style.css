@@ -11,3 +11,16 @@
     background-color: rgb(216, 189, 239);
 }
 
+.img-fluid {
+  max-width:100%;
+  height:auto;
+}
+
+.header {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
+.container {
+  padding: 15px 30px;
+}
